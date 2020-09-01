@@ -1,9 +1,10 @@
 body{
-  font-family: 'lato';
+  font-family: 'Gurmukhi MN';
   line-height: 20px;
   font-size:18px;
   margin: 20px 50px 20px 50px;
-  background-color: #fffbeb;
+  background-color: #2ca796;
+  color: #2e73a6;
 }
 img {
   max-width: 100%;
@@ -23,23 +24,27 @@ margin: 15px 0px 0px 0px;
   padding-left: 20px;
 }
 mark{
-  background-color: #f7f5c9;
+  background-color: white;
 }
 a{
   text-decoration: underline;
   color: black;
   font-style: italic;
 }
-h1{
-  color: black;
-  background: #d9edfc;
-  border: 4px solid black;
-  padding: 20px;
-  margin-bottom: -5px;
-}
 h3{
   margin-bottom: -12px;
 }
 h4{
   margin-top: -12px;
+}
+h1{
+  font-family: 'Albertus Extra Bold';
+}
+.center {
+  color: #2e73a6;
+  background-color: #f4f1e1;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
 }
