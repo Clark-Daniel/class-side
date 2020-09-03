@@ -1,0 +1,88 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20;
+  background-image: url(background.jpg);
+}
+.hero {
+  color: #bd3811;
+  border: 10px #bd3811;
+  border-style: dotted;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  padding: 0px;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+h1 {
+  font-size: 38px;
+}
+mark{
+  background-color: rgba(121, 167, 255, 0.27);
+}
+.center {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+}
+
+.button {
+  color: white;
+  background-color: #bd3811;
+  padding: 10px;
+}
+.bio {
+  color: #0d38ae;
+  border: 7px #0d38ae;
+  border-style: dotted;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom:  10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.separate {
+  color: white;
+  background-color: #bd3811;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+}
+
+.intro {
+  color: #bd3811;
+  border: 10px #bd3811;
+  border-style: dotted;
+  margin: auto;
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom:  10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.content {
+  color: #0d38ae;
+  border: 7px #0d38ae;
+  border-style: dotted;
+  margin: auto;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom:  10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
