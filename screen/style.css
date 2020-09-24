@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(background.jpg);
+  font-family: 'Inconsolata', monospace;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 10px;
+  animation: bord 2s infinite alternate;
+
+}
+
+.quincy {
+width: 10vw;
+position: fixed;
+top: 41%;
+left: 45%;
+z-index: 1;
+}
+
+.cloud-1 {
+  width: 30vw;
+  position: fixed;
+  z-index: 2;
+  animation: cloud1 13s infinite;
+}
+
+.cloud-2 {
+  width: 40vw;
+  position: fixed;
+  left: -800px;
+  top: 400px;
+  z-index: 2;
+  animation: cloud2 13s infinite;
+  animation-delay: 2s;
+}
+
+.cloud-3 {
+  width: 20vw;
+  position: fixed;
+  left: -800px;
+  top: 200px;
+  z-index: 2;
+  animation: cloud3 13s infinite;
+  animation-delay: 5s;
+}
+
+.cloud-4 {
+  width: 35vw;
+  position: fixed;
+  left: -800px;
+  top: 800px;
+  z-index: 2;
+  animation: cloud4 13s infinite;
+  animation-delay: 7s;
+}
+
+
+.circle {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  border-style: dotted;
+  border-width: 4px;
+  animation: pulse 4s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+    border-style: dotted double;
+    border-width: 4px;
+  }
+  50% {
+    transform: scale(1.3) rotate(360deg);
+    border-style: dotted double;
+    border-width: 6px;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    border-style: dotted double;
+    border-width: 4px;
+  }
+}
+
+@keyframes bord {
+  0% {
+    border-style: solid;
+    border-width: 10px;
+  }
+  100% {
+    border-style: solid;
+    border-width: 45px;
+  }
+}
+
+@keyframes cloud1 {
+  0% {
+    left: -800px;
+    top: 50px;
+  }
+  100% {
+    left: 2000px;
+    top: 50px;
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    left: -800px;
+    top: 400px;
+  }
+  100% {
+    left: 2000px;
+    top: 400px;
+  }
+}
+
+@keyframes cloud3 {
+  0% {
+    left: -800px;
+    top: 200px;
+  }
+  100% {
+    left: 2000px;
+    top: 200px;
+  }
+}
+
+@keyframes cloud4 {
+  0% {
+    left: -800px;
+    top: 800px;
+  }
+  100% {
+    left: 2000px;
+    top: 800px;
+  }
+}
