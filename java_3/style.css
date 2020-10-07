@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+.marquee {
+  font-size: 42.5px;
+  overflow: hidden;
+}
+
+.marquee1 {
+  background: rgb(84, 113, 83);
+  color: white;
+}
+
+.marquee2 {
+  background: rgb(121, 69, 68);
+  color: white;
+}
+
+.marquee3 {
+  background: rgb(49, 65, 217);
+  color: white;
+}
