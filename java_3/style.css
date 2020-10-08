@@ -6,6 +6,10 @@ body {
   margin: 0;
   font-family: 'Archivo Black', sans-serif;
 }
+
+a:hover{
+  cursor: initial;
+}
 .marquee {
   font-size: 42.5px;
   overflow: hidden;
