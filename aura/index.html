@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Overwhelmed</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="snapfit.js"></script>
+  <script>
+    //set minutes
+    var mins = 1;
+
+    //calculate the seconds
+    var secs = mins * 60;
+
+    //countdown function is evoked when page is loaded
+    function countdown() {
+      setTimeout('Decrement()', 60);
+    }
+
+    //Decrement function decrement the value.
+    function Decrement() {
+      if (document.getElementById) {
+        minutes = document.getElementById("minutes");
+        seconds = document.getElementById("seconds");
+
+        //if less than a minute remaining
+        //Display only seconds value.
+        if (seconds < 59) {
+          seconds.value = secs;
+        }
+
+        //Display both minutes and seconds
+        //getminutes and getseconds is used to
+        //get minutes and seconds
+        else {
+          minutes.value = getminutes();
+          seconds.value = getseconds();
+        }
+        //when less than a minute remaining
+        //colour of the minutes and seconds
+        //changes to red
+        if (mins < 1) {
+          minutes.style.color = "white";
+          seconds.style.color = "white";
+        }
+        //if seconds becomes zero,
+        //then page alert time up
+        if (mins < 0) {
+          alert('time up');
+          minutes.value = 0;
+          seconds.value = 0;
+        }
+        //if seconds > 0 then seconds is decremented
+        else {
+          secs--;
+          setTimeout('Decrement()', 1000);
+        }
+      }
+    }
+
+    function getminutes() {
+      //minutes is seconds divided by 60, rounded down
+      mins = Math.floor(secs / 60);
+      return mins;
+    }
+
+    function getseconds() {
+      //take minutes remaining (as seconds) away
+      //from total seconds remaining
+      return secs - Math.round(mins * 60);
+    }
+  </script>
+</head>
+
+<body onload="countdown();">
+  <div class="pop">
+    <p>YOU FAILED<br>REFRESH AND TRY AGAIN</p>
+  </div>
+  <div class="hurry">HURRY UP!</div>
+  <div class="hurry2">FINISH IT!</div>
+  <div id="player">
+    <audio src="tense.mp3" controls>
+    </audio>
+  </div>
+  <div class="contain">
+    <div class="timer">
+      Time Left:
+      <input id="minutes" type="text" style="
+              width: 42px;
+              background: rgb(191, 81, 81);
+              border: none;
+              font-size: 42px;
+              color: white;
+              font-family: 'Piazzolla', serif;
+              ">
+      <font> : </font>
+      <input id="seconds" type="text" style="
+              width: 60px;
+              background: rgb(191, 81, 81);
+              border: none;
+              font-size: 42px;
+              color: white;
+              font-family: 'Piazzolla', serif;
+              ">
+    </div>
+    <div class="puzz">
+      <img onLoad="snapfit.add(this);" src="puzzle.jpg" width="700" height="400" ...>
+    </div>
+  </div>
+  <script>
+    snapfit.defaultMixed = true;
+    snapfit.defaultSimple = true;
+    snapfit.defaultPolygon = true;
+    snapfit.defaultLevel = 2;
+  </script>
+</body>
+
+</html>
