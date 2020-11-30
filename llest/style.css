@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  src: url(assets/Recoleta-Bold.woff);
+  font-family: llest;
+}
+body {
+  background: #261e21;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #e87543;
+  width: 100vw;
+  align-content: center;
+  text-align: center;
+  margin: 0px;
+  z-index: 4;
+}
+
+.arrow {
+  position: fixed;
+  top: 45%;
+  left: 1.5%;
+  z-index: 3;
+  animation: arrow 3s infinite;
+  animation-timing-function: linear;
+}
+
+.arrow img{
+width: 20px;
+}
+
+.arrow2 {
+  position: fixed;
+  top: 45%;
+  right: 1.5%;
+  z-index: 3;
+  animation: arrow2 3s infinite;
+  animation-timing-function: linear;
+}
+
+.arrow2 img{
+width: 20px;
+}
+
+.navbutton {
+  width: 20%;
+  font-family: llest;
+  padding: 20px;
+  text-align: center;
+  margin: 0px;
+  color: #2c2d2a;
+  text-decoration: none;
+}
+
+.navimg {
+  width: 35%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.products {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: llest;
+}
+
+footer {
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: llest;
+  font-size: 12px;
+  color: #2c2d2a;
+  background: #e87543;
+}
+
+.footimg {
+  margin: 10px;
+  width: 5%;
+}
+
+header {
+  font-size: 60px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2c2d2a;
+}
+
+.learn {
+  margin-top: 20px;
+  width: 50%;
+  font-family: llest;
+  text-align: center;
+  color: #2c2d2a;
+  background: #e87543;
+  border-style: solid;
+  border-color: #2c2d2a;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: padding .5s;
+  transition: margin-top .5s;
+}
+
+.learn:hover {
+  padding: 17px;
+}
+
+.divider {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  background: #2c2d2a;
+  text-align: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.secondfigure {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.intro {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #261e21;
+  z-index: 1;
+}
+
+.intro video {
+  margin-top: 90px;
+  /*width: 100%;*/
+  object-fit: contain;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  Left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.heroo {
+  display: flex;
+  position: relative;
+  padding-top: 75px;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 60vh;
+  margin: 0px;
+  z-index: 1;
+  background: #298899;
+}
+
+.stamp{
+  width: 20%;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  z-index: 1;
+  background: #298899;
+}
+
+.loopy {
+  position: absolute;
+  top: 70%;
+  right: 43%;
+  z-index: 3;
+  transform: translate(-50%,-50%);
+  animation: loopy 3s infinite;
+  animation-timing-function: linear;
+}
+.loopy img{
+    width: 140px;
+}
+
+.loopy2 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  z-index: 3;
+  transform: translate(-50%,-50%);
+  animation: loopy 3s infinite;
+  animation-timing-function: linear;
+}
+.loopy2 img{
+    width: 140px;
+}
+
+.loopy3 {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  z-index: 3;
+  transform: translate(-50%,-50%);
+  animation: loopy 3s infinite;
+  animation-timing-function: linear;
+}
+.loopy3 img{
+    width: 140px;
+}
+
+.loopy4 {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  z-index: 3;
+  transform: translate(-50%,-50%);
+  animation: loopy 3s infinite;
+  animation-timing-function: linear;
+}
+.loopy4 img{
+    width: 140px;
+}
+
+.hero2 {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  z-index: 1;
+  background: #ceb384;
+}
+
+.hero3 {
+  display: flex;
+  position: static;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding-top: 12vh;
+  height: 90vh;
+  margin: 0px;
+  z-index: 1;
+  background: #ceb384;
+}
+.hero3p{
+  display: flex;
+  position: static;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: 0px;
+  z-index: 1;
+}
+
+.hero3p img {
+  width: 100%
+}
+
+.hero4 {
+  display: flex;
+  position: static;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  height: 70vh;
+  margin: 0px;
+  z-index: 1;
+  background: #ceb384;
+}
+.hero4t{
+  display: flex;
+  position: static;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  margin: 0px;
+  z-index: 1;
+}
+
+.hero-r {
+  width: 60%;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.hero-r img {
+  width: 83%;
+  margin: 0px, ;
+}
+
+.hero-r2 {
+  width: 60%;
+  margin: 0px;
+  padding-top: 40px;
+}
+
+.hero-r2 img {
+  width: 100%;
+}
+
+.hero-l {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-family: llest;
+  padding-left: 25px;
+  padding-top: 0px;
+  margin: 0px;
+  text-align: left;
+  align-content: center;
+}
+
+.hero-l2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-family: llest;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 0px;
+  margin: 0px;
+  text-align: left;
+  align-content: center;
+}
+
+.hero-ll {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-family: llest;
+  padding-right: 30px;
+  padding-top: 0px;
+  margin: 0px;
+  text-align: left;
+  align-content: center;
+}
+
+@keyframes arrow {
+0% {
+  top: 30%;
+  left: 1.5%;
+  opacity: 0;
+}
+
+50% {
+  top: 45%;
+  left: 1.5%;
+  opacity: 1;
+}
+
+100% {
+  top: 70%;
+  left: 1.5%;
+  opacity: 0;
+}
+
+}
+
+@keyframes loopy {
+  0% {
+  transform: rotate(0deg);
+  }
+  100%{
+  transform: rotate(-360deg);
+  }
+}
+
+@keyframes arrow2 {
+0% {
+  top: 30%;
+  right: 1.5%;
+  opacity: 0;
+}
+
+50% {
+  top: 45%;
+  right: 1.5%;
+  opacity: 1;
+}
+
+100% {
+  top: 70%;
+  right: 1.5%;
+  opacity: 0;
+}
+
+}
