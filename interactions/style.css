@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(138, 191, 203);
+  font-family: helvetica;
+  font-size: 16;
+}
+
+.special {
+  color: rgb(67, 77, 171);
+  cursor: cell;
+}
+
+img {
+  max-width: 300px;
+}
+.special:hover {
+  color: black;
+}
+
+.hidden {
+  /*display: none; */
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .5s ease;
+  pointer-events: none;
+}
+
+.img-a{
+  top:20%;
+  left: 20%;
+}
+
+.img-b{
+  top: 20%;
+  left: 40%;
+}
+
+.special:hover .hidden {
+  /*display: inline;*/
+  opacity: 1;
+}
+
+a {
+  color: rgb(108, 46, 62);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(255, 243, 82);
+}
+
+.object {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+  background: rgb(153, 45, 31);
+  border-radius: 50%;
+  cursor: grab;
+  /* transition: all 1s ease, ;*/
+  transition: transform 1s ease,
+              background 1s ease,
+              border-radius 1s ease;
+  /*transition-delay: 1s;*/
+}
+
+.object:hover {
+  transform: scale(2);
+  background: rgb(255, 250, 139);
+  border-radius: 0;
+}
